@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/gamma.dir/main.cpp.o CMakeFiles/gamma.dir/Fried.cpp.o CMakeFiles/gamma.dir/FoodFactory.cpp.o CMakeFiles/gamma.dir/Soup.cpp.o  -o gamma.exe -Wl,--out-implib,libgamma.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,11 @@
+C:\Users\user\desktop\code\gamma\bin\Debug\netcoreapp2.2\gamma.deps.json
+C:\Users\user\desktop\code\gamma\bin\Debug\netcoreapp2.2\gamma.runtimeconfig.json
+C:\Users\user\desktop\code\gamma\bin\Debug\netcoreapp2.2\gamma.runtimeconfig.dev.json
+C:\Users\user\desktop\code\gamma\bin\Debug\netcoreapp2.2\gamma.dll
+C:\Users\user\desktop\code\gamma\bin\Debug\netcoreapp2.2\gamma.pdb
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.csprojAssemblyReference.cache
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.csproj.CoreCompileInputs.cache
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.AssemblyInfoInputs.cache
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.AssemblyInfo.cs
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.dll
+C:\Users\user\desktop\code\gamma\obj\Debug\netcoreapp2.2\gamma.pdb

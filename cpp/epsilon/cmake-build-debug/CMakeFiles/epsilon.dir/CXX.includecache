@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/user/Desktop/cpp/epsilon/days.h
+string
+-
+vector
+-
+
+/cygdrive/c/Users/user/Desktop/cpp/epsilon/main.cpp
+iostream
+-
+days.h
+/cygdrive/c/Users/user/Desktop/cpp/epsilon/days.h
+

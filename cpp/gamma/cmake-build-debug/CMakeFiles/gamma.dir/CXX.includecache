@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.cpp
+FoodFactory.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.h
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.h
+string
+-
+iostream
+-
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Fried.cpp
+Fried.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Fried.h
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Fried.h
+FoodFactory.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.h
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Soup.cpp
+Soup.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Soup.h
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/Soup.h
+string
+-
+FoodFactory.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.h
+
+/cygdrive/c/Users/user/Desktop/cpp/gamma/main.cpp
+FoodFactory.h
+/cygdrive/c/Users/user/Desktop/cpp/gamma/FoodFactory.h
+

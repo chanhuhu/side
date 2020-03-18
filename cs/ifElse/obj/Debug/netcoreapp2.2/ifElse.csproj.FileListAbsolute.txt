@@ -1,0 +1,11 @@
+C:\Users\user\desktop\code\ifElse\bin\Debug\netcoreapp2.2\ifElse.deps.json
+C:\Users\user\desktop\code\ifElse\bin\Debug\netcoreapp2.2\ifElse.runtimeconfig.json
+C:\Users\user\desktop\code\ifElse\bin\Debug\netcoreapp2.2\ifElse.runtimeconfig.dev.json
+C:\Users\user\desktop\code\ifElse\bin\Debug\netcoreapp2.2\ifElse.dll
+C:\Users\user\desktop\code\ifElse\bin\Debug\netcoreapp2.2\ifElse.pdb
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.csprojAssemblyReference.cache
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.csproj.CoreCompileInputs.cache
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.AssemblyInfoInputs.cache
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.AssemblyInfo.cs
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.dll
+C:\Users\user\desktop\code\ifElse\obj\Debug\netcoreapp2.2\ifElse.pdb

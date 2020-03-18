@@ -1,0 +1,11 @@
+C:\Users\user\desktop\code\nestedLoop\bin\Debug\netcoreapp2.2\nestedLoop.deps.json
+C:\Users\user\desktop\code\nestedLoop\bin\Debug\netcoreapp2.2\nestedLoop.runtimeconfig.json
+C:\Users\user\desktop\code\nestedLoop\bin\Debug\netcoreapp2.2\nestedLoop.runtimeconfig.dev.json
+C:\Users\user\desktop\code\nestedLoop\bin\Debug\netcoreapp2.2\nestedLoop.dll
+C:\Users\user\desktop\code\nestedLoop\bin\Debug\netcoreapp2.2\nestedLoop.pdb
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.csprojAssemblyReference.cache
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.csproj.CoreCompileInputs.cache
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.AssemblyInfoInputs.cache
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.AssemblyInfo.cs
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.dll
+C:\Users\user\desktop\code\nestedLoop\obj\Debug\netcoreapp2.2\nestedLoop.pdb

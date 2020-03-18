@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/delta.dir/main.cpp.o  -o delta.exe -Wl,--out-implib,libdelta.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

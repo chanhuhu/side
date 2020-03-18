@@ -1,0 +1,11 @@
+C:\Users\user\desktop\code\IsLeapYear\bin\Debug\netcoreapp2.2\IsLeapYear.deps.json
+C:\Users\user\desktop\code\IsLeapYear\bin\Debug\netcoreapp2.2\IsLeapYear.runtimeconfig.json
+C:\Users\user\desktop\code\IsLeapYear\bin\Debug\netcoreapp2.2\IsLeapYear.runtimeconfig.dev.json
+C:\Users\user\desktop\code\IsLeapYear\bin\Debug\netcoreapp2.2\IsLeapYear.dll
+C:\Users\user\desktop\code\IsLeapYear\bin\Debug\netcoreapp2.2\IsLeapYear.pdb
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.csprojAssemblyReference.cache
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.csproj.CoreCompileInputs.cache
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.AssemblyInfoInputs.cache
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.AssemblyInfo.cs
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.dll
+C:\Users\user\desktop\code\IsLeapYear\obj\Debug\netcoreapp2.2\IsLeapYear.pdb

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/user/Desktop/cpp/luckyString/main.cpp
+iostream
+-
+vector
+-
+stdio.h
+-
+stdlib.h
+-
+algorithm
+-
+

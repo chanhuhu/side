@@ -1,0 +1,11 @@
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.csprojAssemblyReference.cache
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.csproj.CoreCompileInputs.cache
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.AssemblyInfoInputs.cache
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.AssemblyInfo.cs
+C:\Users\user\desktop\code\readKey\bin\Debug\netcoreapp2.2\readKey.deps.json
+C:\Users\user\desktop\code\readKey\bin\Debug\netcoreapp2.2\readKey.runtimeconfig.json
+C:\Users\user\desktop\code\readKey\bin\Debug\netcoreapp2.2\readKey.runtimeconfig.dev.json
+C:\Users\user\desktop\code\readKey\bin\Debug\netcoreapp2.2\readKey.dll
+C:\Users\user\desktop\code\readKey\bin\Debug\netcoreapp2.2\readKey.pdb
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.dll
+C:\Users\user\desktop\code\readKey\obj\Debug\netcoreapp2.2\readKey.pdb
