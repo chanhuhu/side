@@ -6,8 +6,7 @@ def brench(func):
         t0 = time.monotonic_ns()
         func(*args, **kwargs)
         t1 = time.monotonic_ns()
-        print(f"function name: {func.__name__}")
-        return (t1 - t0) * 1e-9
+        return (t1 - t0) * 1e-9 # convert nanosecond to second
     return timed
 
 
@@ -21,5 +20,5 @@ def fibo(n: int):
     return fibo(n-1) + fibo(n-2)
 
 # 0 1 1 2 3 5 8 13 ..
-for i in range(100):
+for i in range(10000):
     print(fibo(i))
