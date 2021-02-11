@@ -3,9 +3,7 @@ import unittest
 def triangle(n: int) -> list[str]:
     result = []
     for i in range(1, n+1):
-        sum = ""
-        for j in range(i):
-            sum += "*"
+        sum = "*" * i
         result.append(sum)
             
     return result
