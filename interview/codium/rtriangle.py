@@ -6,10 +6,9 @@ def triangle(n: int) -> list[str]:
     for i in range(1, n+1):
         sum = ""
         space = n - i
-
         sum = sum.rjust(space)
 
-        for j in range(i):
+        for _ in range(i):
             sum += "*"
 
         result.append(sum)
