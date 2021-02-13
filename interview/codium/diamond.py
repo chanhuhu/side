@@ -1,8 +1,8 @@
 import unittest
 from typing import Callable
 
-line: Callable[[int,int], str] = lambda n, i: ((n  // 2) - i + 1) * ' '\
-                                                        + (2*i+1) * '*'
+line: Callable[[int,int], str] = lambda n, i: ((n  // 2) - i) * ' '\
+                                                    + (2*i+1) * '*'
 even: Callable[[int], bool] = lambda n: n % 2 == 0
 
 odd: Callable[[int], bool] = lambda n: not even(n)
@@ -19,7 +19,7 @@ def diamond(n: int) -> list[str]:
     elif n == 2:
         return ['*','*']
     elif odd(n):
-        return upper + [' ' + '*'* n] + lower
+        return upper + ['*'* n] + lower
 
 
     return result
