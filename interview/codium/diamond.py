@@ -1,15 +1,16 @@
 import unittest
+from typing import Callable
+
+line: Callable[[int,int], str] = lambda n, i: ((n - 1) // 2 - i) * ' ' + (2*i+1) * '*'
 
 def diamond(n: int) -> list[str]:
     result = []
-    for i in range(1, n+1):
-        sum = ""
-        difference = " " * (n - i)
-        sum += difference
-        sum += "*"
-        sum += difference
+    sum=""
+    for i in range(n):
+        sum += line(n,i)
 
         result.append(sum)
+
     return result
 
 class Test(unittest.TestCase):
