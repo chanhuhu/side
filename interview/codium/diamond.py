@@ -1,15 +1,24 @@
 import unittest
 from typing import Callable
 
-line: Callable[[int,int], str] = lambda n, i: ((n - 1) // 2 - i) * ' ' + (2*i+1) * '*'
+line: Callable[[int,int], str] = lambda n, i: ((n  // 2) - i + 1) * ' '\
+                                                        + (2*i+1) * '*'
+even: Callable[[int], bool] = lambda n: n % 2 == 0
+
+odd: Callable[[int], bool] = lambda n: not even(n)
+
 
 def diamond(n: int) -> list[str]:
-    result = []
-    sum=""
-    for i in range(n):
-        sum += line(n,i)
+    upper = [line(n,i) for i in range(n//2)]
+    lower = list(reversed(upper))
+    result = upper + lower
+    if n == 1:
+        return ['*']
+    elif n == 2:
+        return ['*','*']
+    elif odd(n):
+        return upper + [' ' + '*'* n] + lower
 
-        result.append(sum)
 
     return result
 
@@ -31,5 +40,26 @@ class Test(unittest.TestCase):
         self.assertEqual(diamond(3),expect)
 
 if __name__ == "__main__":
-    unittest.main()
+    for i in diamond(9):
+        print(i)
+    print('*9'*10)
+        
+    for i in diamond(5):
+        print(i)
+    print('*5'*10)
 
+    for i in diamond(4):
+        print(i)
+    print('*4'*10)
+
+    for i in diamond(3):
+        print(i)
+    print('*3'*10)
+
+    for i in diamond(2):
+        print(i)
+    print('*2'*10)
+
+    for i in diamond(1):
+        print(i)
+    print('*1'*10)
