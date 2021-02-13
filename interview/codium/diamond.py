@@ -12,6 +12,8 @@ def diamond(n: int) -> list[str]:
     upper = [line(n,i) for i in range(n//2)]
     lower = list(reversed(upper))
     result = upper + lower
+
+    # static analysis a.k.a. fix bug run time
     if n == 1:
         return ['*']
     elif n == 2:
