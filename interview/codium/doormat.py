@@ -6,22 +6,28 @@ import unittest
 L = Literal['A','C']
 R = Literal['B','D']
 
-line: Callable[[int,int,L,R],str] = lambda n, i, left_letter, right_letter: (n - i) * left_letter + '+' + (n -i) * right_letter
+line: Callable[[int,int,L,R],str] = lambda n, i, left_letter, right_letter: (n - i) * left_letter + '+' + (n - i) * right_letter
+line2: Callable[[int,int,L,R],str] = lambda n, i, left_letter, right_letter: (n - i -1) * left_letter + '+' + ((2 * i) - 1) * 'E' + '+' + (n - i -1) * right_letter
 
 def doormat(n: int) -> list[str]:
 
     if n == 1:
         return ['+']
+    top = [line(n,1,'A','B')]
 
-    top = [line(n,i,'A','B') for i in range(1,(n//2)+1)]
-    top_to_middle = ['A+E+B']
-    middle = ['+' + 'E' * (2 * n - 3) + '+']
-    middle_to_bottom = ['C+E+D']
-    bottom = [line(n,i,'C','D') for i in range(1,(n//2)+1)]
+    """
+    if range(1,5-1) = [1,2,3] -> (E * ((2*1) -1) = 'E',(E * ((2*2) -1) = 'EEE'),(E * ((2*3) -1) = 'EEEEE')
+    if range(1,4-1) = [1,2]   -> (E * ((2*1) -1) = 'E',(E * ((2*2) -1) = 'EEE')
+    if range(1,3-1) = [1]     -> (E * ((2*1) -1) = 'E'
+    """
+    top_to_middle = [line2(n,i,'A','B') for i in range(1, (n//2)+1)]
+    middle = ['+' + 'E' * (2 * n - 3) + '+'] 
+    middle_to_bottom = list(reversed([line2(n,i,'C','D') for i in range(1, (n//2)+1)]))
+    bottom = [line(n,1,'C','D')]
     result = top + middle + bottom
 
     if n >= 3:
-        result = top + top_to_middle + middle + middle_to_bottom + bottom
+        result = [top[0]] + top_to_middle + middle + middle_to_bottom + bottom
         return result
 
     return result
@@ -59,5 +65,4 @@ class Test(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
 
