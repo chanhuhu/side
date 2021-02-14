@@ -27,7 +27,7 @@ def doormat(n: int) -> list[str]:
     result = top + middle + bottom
 
     if n >= 3:
-        result = [top[0]] + top_to_middle + middle + middle_to_bottom + bottom
+        result = top + top_to_middle + middle + middle_to_bottom + bottom
         return result
 
     return result
