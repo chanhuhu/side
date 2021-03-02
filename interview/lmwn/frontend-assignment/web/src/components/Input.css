@@ -1,0 +1,38 @@
+.input {
+  display: block;
+  border-bottom-style: grey;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.input:focus {
+  outline: unset;
+  border-bottom: 1px solid rgb(72, 198, 240);
+  margin-bottom: -1px;
+}
+
+.input:hover {
+  border-bottom: 1px solid rgb(72, 198, 240);
+  margin-bottom: -1px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}

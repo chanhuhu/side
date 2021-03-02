@@ -1,0 +1,12 @@
+.link {
+    color: rgb(72, 198, 240);
+}
+
+.link:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: indigo;
+}
