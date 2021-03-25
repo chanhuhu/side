@@ -1,5 +1,7 @@
+import axios from "axios";
 import React, { Suspense, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import { useDebounceValue } from "utils/useDebounceValue";
 import apiClient from "../api/client";
 import Card from "../components/Card";
 import ExternalLink from "../components/ExternalLink";
@@ -14,6 +16,7 @@ import useQuery from "../utils/useQuery";
 export default function Home() {
   //#region state
   const [search, setSearch] = useState("");
+  const debounceValue = useDebounceValue(search, 1000);
   const [trips, setTrips] = useState<Trip[] | null>(null);
   //#endregion
 
@@ -22,21 +25,38 @@ export default function Home() {
 
   //#region useEffect
   useEffect(() => {
-    (async () => {
-      let res = await apiClient.get("trips");
-      let trips = res.data;
-      setTrips(trips);
-      setSearch(query.get("keyword") ?? "");
-    })();
+    try {
+      (async () => {
+        const { data } = await apiClient.get("trips");
+
+        setTrips(data);
+        setSearch(query.get("keyword") ?? "");
+      })();
+    } catch (err) {
+      console.log(err);
+    }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    (async () => {
-      let res = await apiClient.get(`trips?keyword=${search}`);
-      let trips = res.data;
-      setTrips(trips);
-    })();
-  }, [search]);
+    const cancleToken = axios.CancelToken;
+    const source = cancleToken.source();
+    try {
+      (async () => {
+        const { data } = await apiClient.get(`trips?keyword=${debounceValue}`, {
+          cancelToken: source.token,
+        });
+
+        setTrips(data);
+      })();
+    } catch (err) {
+      console.log(err);
+    }
+
+    return () => {
+      source.cancel("Aborted the request");
+    };
+  }, [debounceValue]);
+
   //#endregion
   return (
     <div className="container">
@@ -49,10 +69,10 @@ export default function Home() {
         </datalist>
         <Input
           list="trips"
-          onChange={(e) => {
-            const newSearch = e.target.value;
+          onInput={(e) => {
+            const newSearch = e.currentTarget.value;
             setSearch(newSearch);
-            history.push(`?keyword=${newSearch}`);
+            history.push(`?keyword=${debounceValue}`);
           }}
           value={search}
           placeholder="หาที่ท่องเที่ยวแล้วไปกัน..."

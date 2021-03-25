@@ -13,7 +13,7 @@ struct RequestParams {
     keyword: Option<String>
 }
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
+#[derive( Clone, Debug, Deserialize, Serialize,Eq, Ord, PartialEq, PartialOrd)]
 struct Trip {
     title: String,
     eid: String,
@@ -52,7 +52,9 @@ async fn get_trips(request_params: web::Query<RequestParams>) -> impl Responder 
                 let lowered_case_tags: Vec<String> = trip.tags.iter().map(|tag| tag.to_lowercase()).collect();
                 lowered_case_tags.contains(&keyword.to_lowercase())
             }).collect();
-            let filtered_trips = if !get_by_title.is_empty() { get_by_title } else if !get_by_desc.is_empty() { get_by_desc } else { get_by_tags };
+            let mut filtered_trips = [get_by_tags, get_by_desc, get_by_title].concat();
+            filtered_trips.sort_by(|a,b| a.eid.cmp(&b.eid));
+            filtered_trips.dedup();
             filtered_trips
         }
         // otherwise return all trips
