@@ -1,0 +1,17 @@
+[package]
+name = "grrs-chanhuhu"
+version = "0.1.0"
+authors = ["Aphimuk Yimsukpaitoon <luroman6@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "A tool to search files implement with BufReader for read file fline by line"
+readme = "README.md"
+homepage = "https://github.com/chanhuhu/side"
+repository = "https://github.com/chanhuhu/side"
+keywords = ["cli", "search", "demo"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3.13"
+anyhow = "1.0"
